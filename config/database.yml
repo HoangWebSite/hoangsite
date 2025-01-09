@@ -83,6 +83,7 @@ production:
     <<: *default
     database: shopmoi_production
     username: shopmoi
+    url: <%= ENV['DATABASE_URL'] %>
     password: <%= ENV["SHOPMOI_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
